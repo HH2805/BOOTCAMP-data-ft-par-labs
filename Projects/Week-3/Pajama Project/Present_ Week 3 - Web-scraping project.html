@@ -1,0 +1,468 @@
+
+
+
+<!DOCTYPE html>
+	<html class="sl-root decks live live-server present-base">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Present: Week 3 -  Web-scraping project</title>
+		<meta name="description" content="Hélène" />
+		<meta property="og:title" content="Week 3 -  Web-scraping project" />
+		<meta property="og:description" content="Hélène" />
+		<meta property="og:site_name" content="Slides" />
+		<meta property="og:image" content="https://media.slid.es/thumbnails/9555b72844421cecfb2391e6c34b7f38/thumb.jpg?1606686860" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="https://slides.com/moncomptegoogle/casino-wheel-63e606/live?context=editing" />
+		<meta property="fb:app_id" content="146002942236376" />
+
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" type="text/css" data-application-font="inter">
+		<link rel="stylesheet" media="all" href="//assets.slid.es/assets/slides/slides-5463dbbad1a68c6e9a85872698fd43e74078271bfd42f08aadf3e7324137e99c.css" />
+		<link rel="stylesheet" media="all" href="//assets.slid.es/assets/application-2d711ed59d41a4b53ba2e5bc9a4742db16c30bb89a38f07a089e4bca9da514c1.css" />
+		<link rel="stylesheet" media="all" href="//assets.slid.es/assets/deck-v2-decc9fc7e7d11e7781743b9cbd47c0d6b223b3ba2ee96c784d0f1355d5e8b1d5.css" />
+
+
+
+<style id="user-css-output" type="text/css"></style>
+		<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="yynLYNBzct0fS/HaKFBjM1QnBGZbfIXag0qqFoplVsxLO6xs3ACliRQTNrhm4lg3wc8uNE0KkW5iHIKycV3dQA==" />
+		<script type="text/javascript">
+  if( navigator.doNotTrack !== '1' && !/dnt=1/.test( window.location.search ) ) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-39670045-1', 'auto');
+    ga('send', 'pageview');
+
+  }
+</script>
+			<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@Slides">
+	<meta name="twitter:title" content="Week 3 -  Web-scraping project">
+	<meta name="twitter:description" content="Hélène">
+	<meta name="twitter:image" content="https://media.slid.es/thumbnails/9555b72844421cecfb2391e6c34b7f38/thumb.jpg?1606686860">
+
+	</head>
+	<body>
+		<div class="page-loader visible" data-style="white">
+			<div class="page-loader-inner">
+				<div class="page-loader-spinner"></div>
+				<p class="page-loader-message">Loading</p>
+			</div>
+		</div>
+
+
+		
+
+<header class="global-header ">
+  <div class="wrapper">
+    <div class="slides-logo logo-animation">
+      <a class="symbol" href="/">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+      </a>
+      <a class="word" href="/"></a>
+    </div>
+    <div class="nav-wrapper">
+      <ul class="nav">
+          <li class="nav-item " data-page-id="home/explore">
+            <a class="nav-item-anchor" href="/explore"><span class="nav-item-label wide">Explore</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-anchor new-deck-button" href="/moncomptegoogle/new"><span class="nav-item-label">New deck</span></a>
+          </li>
+          <li class="nav-item overflow-disabled profile-button">
+            <a class="nav-item-anchor" href="/moncomptegoogle">
+              <span class="nav-item-label">moncomptegoogle</span>
+              <span class="nav-item-burger">
+                <span class="nav-item-burger-1"></span>
+                <span class="nav-item-burger-2"></span>
+                <span class="nav-item-burger-3"></span>
+              </span>
+            </a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+		<script>
+var SLPhoneCountryCodes = [
+        {"code":1,"name":"United States (+1)"},
+        {"code":93,"name":"Afghanistan (+93)"},
+        {"code":358,"name":"Åland Islands (+358)"},
+        {"code":355,"name":"Albania (+355)"},
+        {"code":213,"name":"Algeria (+213)"},
+        {"code":1,"name":"American Samoa (+1)"},
+        {"code":376,"name":"Andorra (+376)"},
+        {"code":244,"name":"Angola (+244)"},
+        {"code":1,"name":"Anguilla (+1)"},
+        {"code":672,"name":"Antarctica (+672)"},
+        {"code":1,"name":"Antigua and Barbuda (+1)"},
+        {"code":54,"name":"Argentina (+54)"},
+        {"code":374,"name":"Armenia (+374)"},
+        {"code":297,"name":"Aruba (+297)"},
+        {"code":61,"name":"Australia (+61)"},
+        {"code":43,"name":"Austria (+43)"},
+        {"code":994,"name":"Azerbaijan (+994)"},
+        {"code":1,"name":"Bahamas (+1)"},
+        {"code":973,"name":"Bahrain (+973)"},
+        {"code":880,"name":"Bangladesh (+880)"},
+        {"code":1,"name":"Barbados (+1)"},
+        {"code":375,"name":"Belarus (+375)"},
+        {"code":32,"name":"Belgium (+32)"},
+        {"code":501,"name":"Belize (+501)"},
+        {"code":229,"name":"Benin (+229)"},
+        {"code":1,"name":"Bermuda (+1)"},
+        {"code":975,"name":"Bhutan (+975)"},
+        {"code":591,"name":"Bolivia, (+591)"},
+        {"code":599,"name":"Bonaire (+599)"},
+        {"code":387,"name":"Bosnia and Herzegovina (+387)"},
+        {"code":267,"name":"Botswana (+267)"},
+        {"code":55,"name":"Brazil (+55)"},
+        {"code":246,"name":"British Indian Ocean Territory (+246)"},
+        {"code":1,"name":"British Virgin Islands (+1)"},
+        {"code":673,"name":"Brunei Darussalam (+673)"},
+        {"code":359,"name":"Bulgaria (+359)"},
+        {"code":226,"name":"Burkina Faso (+226)"},
+        {"code":257,"name":"Burundi (+257)"},
+        {"code":855,"name":"Cambodia (+855)"},
+        {"code":237,"name":"Cameroon (+237)"},
+        {"code":1,"name":"Canada (+1)"},
+        {"code":238,"name":"Cape Verde (+238)"},
+        {"code":1,"name":"Cayman Islands (+1)"},
+        {"code":236,"name":"Central African Republic (+236)"},
+        {"code":235,"name":"Chad (+235)"},
+        {"code":56,"name":"Chile (+56)"},
+        {"code":86,"name":"China (+86)"},
+        {"code":61,"name":"Christmas Island (+61)"},
+        {"code":61,"name":"Cocos Islands (+61)"},
+        {"code":57,"name":"Colombia (+57)"},
+        {"code":269,"name":"Comoros (+269)"},
+        {"code":682,"name":"Cook Islands (+682)"},
+        {"code":506,"name":"Costa Rica (+506)"},
+        {"code":385,"name":"Croatia (+385)"},
+        {"code":53,"name":"Cuba (+53)"},
+        {"code":599,"name":"Curacao (+599)"},
+        {"code":357,"name":"Cyprus (+357)"},
+        {"code":420,"name":"Czech Republic (+420)"},
+        {"code":243,"name":"Democratic Republic of the Congo (+243)"},
+        {"code":45,"name":"Denmark (+45)"},
+        {"code":253,"name":"Djibouti (+253)"},
+        {"code":1,"name":"Dominica (+1)"},
+        {"code":1,"name":"Dominican Republic (+1)"},
+        {"code":593,"name":"Ecuador (+593)"},
+        {"code":20,"name":"Egypt (+20)"},
+        {"code":503,"name":"El Salvador (+503)"},
+        {"code":240,"name":"Equatorial Guinea (+240)"},
+        {"code":291,"name":"Eritrea (+291)"},
+        {"code":372,"name":"Estonia (+372)"},
+        {"code":251,"name":"Ethiopia (+251)"},
+        {"code":500,"name":"Falkland Islands (Malvinas) (+500)"},
+        {"code":298,"name":"Faroe Islands (+298)"},
+        {"code":679,"name":"Fiji (+679)"},
+        {"code":358,"name":"Finland (+358)"},
+        {"code":33,"name":"France (+33)"},
+        {"code":594,"name":"French Guiana (+594)"},
+        {"code":689,"name":"French Polynesia (+689)"},
+        {"code":241,"name":"Gabon (+241)"},
+        {"code":220,"name":"Gambia (+220)"},
+        {"code":995,"name":"Georgia (+995)"},
+        {"code":49,"name":"Germany (+49)"},
+        {"code":233,"name":"Ghana (+233)"},
+        {"code":350,"name":"Gibraltar (+350)"},
+        {"code":30,"name":"Greece (+30)"},
+        {"code":299,"name":"Greenland (+299)"},
+        {"code":1,"name":"Grenada (+1)"},
+        {"code":590,"name":"Guadeloupe (+590)"},
+        {"code":1,"name":"Guam (+1)"},
+        {"code":502,"name":"Guatemala (+502)"},
+        {"code":44,"name":"Guernsey (+44)"},
+        {"code":224,"name":"Guinea (+224)"},
+        {"code":245,"name":"Guinea-Bissau (+245)"},
+        {"code":592,"name":"Guyana (+592)"},
+        {"code":509,"name":"Haiti (+509)"},
+        {"code":39,"name":"Vatican (+39)"},
+        {"code":504,"name":"Honduras (+504)"},
+        {"code":852,"name":"Hong Kong (+852)"},
+        {"code":36,"name":"Hungary (+36)"},
+        {"code":354,"name":"Iceland (+354)"},
+        {"code":91,"name":"India (+91)"},
+        {"code":62,"name":"Indonesia (+62)"},
+        {"code":98,"name":"Iran (+98)"},
+        {"code":964,"name":"Iraq (+964)"},
+        {"code":353,"name":"Ireland (+353)"},
+        {"code":44,"name":"Isle of Man (+44)"},
+        {"code":972,"name":"Israel (+972)"},
+        {"code":39,"name":"Italy (+39)"},
+        {"code":225,"name":"Ivory Coast (+225)"},
+        {"code":1,"name":"Jamaica (+1)"},
+        {"code":81,"name":"Japan (+81)"},
+        {"code":44,"name":"Jersey (+44)"},
+        {"code":962,"name":"Jordan (+962)"},
+        {"code":7,"name":"Kazakhstan (+7)"},
+        {"code":254,"name":"Kenya (+254)"},
+        {"code":686,"name":"Kiribati (+686)"},
+        {"code":383,"name":"Kosovo (+383)"},
+        {"code":850,"name":"North Korea (+850)"},
+        {"code":82,"name":"South Korea (+82)"},
+        {"code":965,"name":"Kuwait (+965)"},
+        {"code":996,"name":"Kyrgyzstan (+996)"},
+        {"code":856,"name":"Lao People's Democratic Republic (+856)"},
+        {"code":371,"name":"Latvia (+371)"},
+        {"code":961,"name":"Lebanon (+961)"},
+        {"code":266,"name":"Lesotho (+266)"},
+        {"code":231,"name":"Liberia (+231)"},
+        {"code":218,"name":"Libya (+218)"},
+        {"code":423,"name":"Liechtenstein (+423)"},
+        {"code":370,"name":"Lithuania (+370)"},
+        {"code":352,"name":"Luxembourg (+352)"},
+        {"code":853,"name":"Macao (+853)"},
+        {"code":389,"name":"Macedonia (+389)"},
+        {"code":261,"name":"Madagascar (+261)"},
+        {"code":265,"name":"Malawi (+265)"},
+        {"code":60,"name":"Malaysia (+60)"},
+        {"code":960,"name":"Maldives (+960)"},
+        {"code":223,"name":"Mali (+223)"},
+        {"code":356,"name":"Malta (+356)"},
+        {"code":692,"name":"Marshall Islands (+692)"},
+        {"code":596,"name":"Martinique (+596)"},
+        {"code":222,"name":"Mauritania (+222)"},
+        {"code":230,"name":"Mauritius (+230)"},
+        {"code":262,"name":"Mayotte (+262)"},
+        {"code":52,"name":"Mexico (+52)"},
+        {"code":691,"name":"Micronesia (+691)"},
+        {"code":373,"name":"Moldova (+373)"},
+        {"code":377,"name":"Monaco (+377)"},
+        {"code":976,"name":"Mongolia (+976)"},
+        {"code":382,"name":"Montenegro (+382)"},
+        {"code":1,"name":"Montserrat (+1)"},
+        {"code":212,"name":"Morocco (+212)"},
+        {"code":258,"name":"Mozambique (+258)"},
+        {"code":95,"name":"Myanmar (+95)"},
+        {"code":264,"name":"Namibia (+264)"},
+        {"code":674,"name":"Nauru (+674)"},
+        {"code":977,"name":"Nepal (+977)"},
+        {"code":31,"name":"Netherlands (+31)"},
+        {"code":599,"name":"Netherlands Antilles (+599)"},
+        {"code":687,"name":"New Caledonia (+687)"},
+        {"code":64,"name":"New Zealand (+64)"},
+        {"code":505,"name":"Nicaragua (+505)"},
+        {"code":227,"name":"Niger (+227)"},
+        {"code":234,"name":"Nigeria (+234)"},
+        {"code":683,"name":"Niue (+683)"},
+        {"code":672,"name":"Norfolk Island (+672)"},
+        {"code":1,"name":"Northern Mariana Islands (+1)"},
+        {"code":47,"name":"Norway (+47)"},
+        {"code":968,"name":"Oman (+968)"},
+        {"code":92,"name":"Pakistan (+92)"},
+        {"code":680,"name":"Palau (+680)"},
+        {"code":970,"name":"Palestine (+970)"},
+        {"code":507,"name":"Panama (+507)"},
+        {"code":675,"name":"Papua New Guinea (+675)"},
+        {"code":595,"name":"Paraguay (+595)"},
+        {"code":51,"name":"Peru (+51)"},
+        {"code":63,"name":"Philippines (+63)"},
+        {"code":48,"name":"Poland (+48)"},
+        {"code":351,"name":"Portugal (+351)"},
+        {"code":1,"name":"Puerto Rico (+1)"},
+        {"code":974,"name":"Qatar (+974)"},
+        {"code":242,"name":"Republic of the Congo (+242)"},
+        {"code":262,"name":"Réunion (+262)"},
+        {"code":40,"name":"Romania (+40)"},
+        {"code":7,"name":"Russian Federation (+7)"},
+        {"code":250,"name":"Rwanda (+250)"},
+        {"code":590,"name":"Saint Barthélemy (+590)"},
+        {"code":290,"name":"Saint Helena (+290)"},
+        {"code":1,"name":"Saint Kitts and Nevis (+1)"},
+        {"code":1,"name":"Saint Lucia (+1)"},
+        {"code":590,"name":"Saint Martin (+590)"},
+        {"code":508,"name":"Saint Pierre and Miquelon (+508)"},
+        {"code":1,"name":"Saint Vincent and the Grenadines (+1)"},
+        {"code":685,"name":"Samoa (+685)"},
+        {"code":378,"name":"San Marino (+378)"},
+        {"code":239,"name":"Sao Tome and Principe (+239)"},
+        {"code":966,"name":"Saudi Arabia (+966)"},
+        {"code":221,"name":"Senegal (+221)"},
+        {"code":381,"name":"Serbia (+381)"},
+        {"code":248,"name":"Seychelles (+248)"},
+        {"code":232,"name":"Sierra Leone (+232)"},
+        {"code":65,"name":"Singapore (+65)"},
+        {"code":1,"name":"Sint Maarten (+1)"},
+        {"code":421,"name":"Slovakia (+421)"},
+        {"code":386,"name":"Slovenia (+386)"},
+        {"code":677,"name":"Solomon Islands (+677)"},
+        {"code":252,"name":"Somalia (+252)"},
+        {"code":27,"name":"South Africa (+27)"},
+        {"code":211,"name":"South Sudan (+211)"},
+        {"code":34,"name":"Spain (+34)"},
+        {"code":94,"name":"Sri Lanka (+94)"},
+        {"code":249,"name":"Sudan (+249)"},
+        {"code":597,"name":"Suriname (+597)"},
+        {"code":47,"name":"Svalbard and Jan Mayen (+47)"},
+        {"code":268,"name":"Swaziland (+268)"},
+        {"code":46,"name":"Sweden (+46)"},
+        {"code":41,"name":"Switzerland (+41)"},
+        {"code":963,"name":"Syrian Arab Republic (+963)"},
+        {"code":886,"name":"Taiwan (+886)"},
+        {"code":992,"name":"Tajikistan (+992)"},
+        {"code":255,"name":"Tanzania (+255)"},
+        {"code":66,"name":"Thailand (+66)"},
+        {"code":670,"name":"Timor-Leste (+670)"},
+        {"code":228,"name":"Togo (+228)"},
+        {"code":690,"name":"Tokelau (+690)"},
+        {"code":676,"name":"Tonga (+676)"},
+        {"code":1,"name":"Trinidad and Tobago (+1)"},
+        {"code":216,"name":"Tunisia (+216)"},
+        {"code":90,"name":"Turkey (+90)"},
+        {"code":993,"name":"Turkmenistan (+993)"},
+        {"code":1,"name":"Turks and Caicos Islands (+1)"},
+        {"code":688,"name":"Tuvalu (+688)"},
+        {"code":256,"name":"Uganda (+256)"},
+        {"code":380,"name":"Ukraine (+380)"},
+        {"code":971,"name":"United Arab Emirates (+971)"},
+        {"code":44,"name":"United Kingdom (+44)"},
+        {"code":598,"name":"Uruguay (+598)"},
+        {"code":1,"name":"U.S. Virgin Islands (+1)"},
+        {"code":998,"name":"Uzbekistan (+998)"},
+        {"code":678,"name":"Vanuatu (+678)"},
+        {"code":58,"name":"Venezuela (+58)"},
+        {"code":84,"name":"Vietnam (+84)"},
+        {"code":681,"name":"Wallis and Futuna (+681)"},
+        {"code":212,"name":"Western Sahara (+212)"},
+        {"code":967,"name":"Yemen (+967)"},
+        {"code":260,"name":"Zambia (+260)"},
+        {"code":263,"name":"Zimbabwe (+263)"}
+];
+</script>
+
+		<div class="reveal-viewport theme-font-montserrat theme-color-sand-blue">
+			<div class="reveal">
+				<div class="slides">
+					<section class="stack" data-id="47c9265e6e23d90b448ce1e8c0948d77"><section data-id="3cb0b8d74a6534271488b2b4bcb232bd"><div class="sl-block" data-block-type="text" style="width: 830.702px; left: 80px; top: 15px; height: auto;" data-block-id="7af9d7e154947fb44444934a7486736a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Web Scraping Project</h1>
+
+<p>Hélène / Data Bootcamp Week 3 </p>
+</div></div>
+
+<div class="sl-block" data-block-type="image" data-name="image-440ddd" data-block-id="2abc6388be2673d56349b286f1ab3b51" style="width: 684.28px; height: 456.187px; left: 137.86px; top: 191.906px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1374" data-natural-height="916" style="" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1483823/images/7988114/Capture.JPG"></div></div></section><section data-id="f6e0435ff13466ffe9745506977ac7f0"><div class="sl-block" data-block-type="text" style="width: 413px; left: 15.056px; top: 11.6842px; height: auto;" data-block-id="0ccb763bc5d65685f3d6538086a224f2"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2><span style="font-size:0.9em">Description</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 594px; left: 206px; top: 146.78px; height: auto;" data-block-id="97b6d2fb15e46cb09fb03bd37cba1858"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 11; text-align: left;">
+<p>From this...</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="image-d04f60" data-block-id="46cabacabfe5f84ba5c0cd2f8d86a0c0" style="width: 571.795px; height: 370.631px; left: 365.205px; top: 24.6845px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1134" data-natural-height="871" data-crop-x="0" data-crop-y="0.078045" data-crop-width="1" data-crop-height="0.84391" style="left: 0px; top: -34px; width: 572px; height: 439px;" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1483823/images/7988234/Capture4.JPG"></div></div>
+<div class="sl-block" data-block-type="text" style="width: 594px; left: 640px; top: 451px; height: auto;" data-block-id="2d4d7bc3434917e03a1caabe37ad9ebb" data-name="text-df4b02"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<p>...to this!</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="image-c18300" data-block-id="57cab3c4dfc6855e634262c5b2826339" style="width: 609.888px; height: 354.46px; left: 15.056px; top: 332.561px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="1244" data-natural-height="723" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1483823/images/7988240/pandas.JPG"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-f31049" data-block-id="9d31daa98192536aef195c555eb096a4" style="width: 314.236px; height: 165.288px; left: 624.934px; top: 490.869px; min-width: 1px; min-height: 1px;"><div class="sl-block-style" style="z-index: 15; transform: rotate(-11deg);"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="500" data-natural-height="263" style="left: 0px; top: 0px; width: 314px; height: 165px;" data-crop-x="0" data-crop-y="0.000001" data-crop-width="1" data-crop-height="0.999998" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1483823/images/7988727/Capture.JPG"></div></div></div></section><section data-id="117e3c5eb9e43376373d1c331a488877"><div class="sl-block" data-block-type="text" style="width: 472.719px; left: 40.2803px; top: 33px; height: auto;" data-block-id="49c2fbe60c95d964f93e5be3b49f5d69"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 10;">
+<h2>Description</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-dd5f85" data-block-id="927b82ef9119dae219e6fcc108260d08" style="height: auto; width: 938.629px; left: 0px; top: 350px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p> </p>
+
+<p><span style="color:rgb(17, 17, 17)">HannaAndersson.com: </span></p>
+
+<p><span style="color:rgb(17, 17, 17)">the merchant website of the US clothes store</span></p>
+
+<p><span style="color:rgb(17, 17, 17)">A renowned clothes store selling mainly pajamas and baby/children clothing.</span></p>
+
+<p>My project: study the entire Sale section of the website</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4c8163" data-block-id="8202dac8d5b53d4cb3822d52d3800815" style="width: 445.442px; height: 234.187px; left: 214.866px; top: 115.813px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="641" data-natural-height="337" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1483823/images/7988770/Capture2.JPG"></div></div></section><section data-id="84b3323ca22ec6108947ee176063e488"><div class="sl-block" data-block-type="text" style="width: 912.982px; left: 23.509px; top: 231.798px; height: auto;" data-block-id="5ca1bbc32ab7e7d5a5f203dc25b16759"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<p style="text-align:left"><span style="font-size:0.7em">I spent the most time on the web-scraping phase and I found it painstakingly difficult.</span></p>
+
+<p style="text-align:left"><span style="font-size:0.7em">- Started with a "403 response" ("Access forbidden").</span></p>
+
+<p style="text-align:left"><span style="font-size:0.7em">- In the website you can only upload 12 new products with every click. Hence in order to scrape 200 products I had to loop over 18 webpages.</span></p>
+
+<p style="text-align:left"><span style="font-size:0.7em">- Then for some items the html tags are missing. For example if a product is sold out there is no longer a html pricing tag, but there is a specific sold-out tag. Same for colors: if the product exists in other colors there is a color tag, but there is no color tag for the products which are available in one color only. </span></p>
+
+<p style="text-align:left"><span style="font-size:0.7em">- At  the end of the web-scraping phase my 8 arrays varied from 204 to 216 values!</span></p>
+
+<p style="text-align:left"> </p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-c233eb" data-block-id="92983975d7ae66ce827b22eaea3a6554" style="height: auto; width: 800px; left: 80px; top: 140px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>Text</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-f56542" data-block-id="826a953d5962a89b86559f115f40b1d5" style="width: 347.33px; height: 173.665px; left: 292.67px; top: 23.6938px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="620" data-natural-height="310" style="" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1483630/images/7935416/challenge.jpg"></div></div></section><section data-id="3641150af5301b03326a5b7c6f81db5d"><div class="sl-block" data-block-type="image" style="width: 916.45px; height: 613.544px; left: 21.775px; top: 16.456px; min-width: 1px; min-height: 1px;" data-block-id="7805779377a367800c5e676e9e8bc349" data-name="image-774f78"><div class="sl-block-content" style="z-index: 10;"><img style="left: 0px; top: -24px; width: 916px; height: 661px;" data-natural-width="1235" data-natural-height="891" data-crop-x="0" data-crop-y="0.036023" data-crop-width="1" data-crop-height="0.927954" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1483823/images/7988203/Capture2.JPG"></div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-be6e4b" data-block-id="0e57c1498898e9d866d87e314f8e9d6a" style="width: 234.912px; height: 87.3688px; left: 325.088px; top: 527.894px;"><div class="sl-block-content" data-shape-type="arrow-left" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 235 87"><polygon points="234.912,26.210639999999998 117.456,26.210639999999998 117.456,0 0,43.6844 117.456,87.3688 117.456,61.15815999999999 234.912,61.15815999999999 234.912,26.210639999999998" class="shape-element" fill="#000000"></polygon></svg></div></div></section><section data-id="d0020d2b30ba5d067455690659e724ab"><div class="sl-block" data-block-type="image" data-name="image-468bee" data-block-id="bbcbe988c027c504477f9967faa54b88" style="width: 911.742px; height: 393.282px; left: 24.129px; top: 96.718px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="976" data-natural-height="421" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1483823/images/7988661/Capture6.JPG"></div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-11e786" data-block-id="9548d0df1b769683b3b97d76c87439ac" style="width: 77.7195px; height: 116.94px; left: 338.053px; top: 469.035px;"><div class="sl-block-content" data-shape-type="symbol-thin-arrow-up" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="4.00024938583374 2.0002505779266357 23.999500274658203 27.999752044677734"><g class="shape-element" fill="#000000" data-viewbox="4.00024938583374 2.0002505779266357 23.999500274658203 27.999752044677734"><path d="M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b5d423" data-block-id="dfcfacd0553eed32334e812e8a3cbbe2" style="height: auto; width: 677.368px; left: 258.503px; top: 600.193px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>No mention of color / No rating</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 315.966px; left: -24.914px; top: 577.193px;" data-block-id="6790ce866a549d2dce0a9aaa3af091c9" data-name="text-e4fbe6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Available colors </p>
+
+<p>/ Rating</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 77.7195px; height: 108.158px; left: 63.5184px; top: 451.842px;" data-block-id="3f3545b82da8c81a2140211c4a2134d9" data-name="shape-0a5f3d"><div class="sl-block-content" data-shape-type="symbol-thin-arrow-up" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="4.00024938583374 2.0002505779266357 23.999500274658203 27.999752044677734"><g class="shape-element" fill="#000000" data-viewbox="4.00024938583374 2.0002505779266357 23.999500274658203 27.999752044677734"><path d="M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z"></path></g></svg></div></div></section><section data-id="a8228be94142173a08e0f177447b9738"><div class="sl-block" data-block-type="text" data-name="text-7fa93c" data-block-id="eb5607f63db710b9a62ceddf678a1789" style="height: auto; width: 747.185px; left: 80px; top: 579.856px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<p>The project mainly made me review Python loops and Pandas dataframes.</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="image-43bbe8" data-block-id="f795d0d0869e7323fa178f990d7a84ac" style="width: 883.772px; height: 406.795px; left: 28.5964px; top: 83.205px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img data-natural-width="1360" data-natural-height="626" style="" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1483823/images/7988224/loops.JPG"></div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-d29492" data-block-id="a1f6c6234472d73c35657f059cdd00c1" style="width: 104.737px; height: 100.877px; left: 521.579px; top: 12.8072px;"><div class="sl-block-content" data-shape-type="symbol-thin-arrow-down-left" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="4.000001907348633 3.999999523162842 23.9997501373291 24"><g class="shape-element" fill="#000000" data-viewbox="4.000001907348633 3.999999523162842 23.9997501373291 24"><path d="M18 28c1.105 0 2-0.895 2-2s-0.895-2-2-2h-7.172l16.586-16.586c0.781-0.781 0.781-2.047 0-2.828-0.391-0.391-0.902-0.586-1.414-0.586s-1.024 0.195-1.414 0.586l-16.586 16.586v-7.172c0-1.105-0.895-2-2-2s-2 0.895-2 2v14h14z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-ef418e" data-block-id="b4878946cc8b92e0da984e1527a3f2c0" style="width: 633.89px; height: 306.131px; left: 294.531px; top: 237.041px; min-width: 1px; min-height: 1px;"><div class="sl-block-style" style="z-index: 13; transform: rotate(-5deg);"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="762" data-natural-height="368" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1483823/images/7988753/Capture.JPG"></div></div></div></section><section data-id="677b83b092426faa17a40905914c74fd"><div class="sl-block" data-block-type="text" style="width: 721.053px; left: 101.93px; top: 70px; height: auto;" data-block-id="5f495c76707a1642f74c594c813b0ec9"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 10;">
+<h2>Some take-aways from data analysis</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bff178" data-block-id="b9a325d0f28e571bec92527846af285c" style="height: auto; width: 898.421px; left: 30.7895px; top: 269.097px;"><div class="sl-block-style" style="z-index: 11; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>- Around 200 items on sale on the website at the moment.</p>
+
+<p>- A high discount rate: sale price is 40% of regular price at median.</p>
+
+<p>- Most products (2/3) have not been rated by consumers. Of those rated, near all are rated 4.5/5 (52%) or 5/5 (48%).</p>
+
+<p>- Median price on sale is $17 and average price is $17,65  --which means that there are not many extreme values. Just one item at  $58 on sale draws the average up.</p>
+</div></div></div></section><section data-id="82814af51645e00f370ffc69bddc16b4"><div class="sl-block" data-block-type="image" data-name="image-efde4b" data-block-id="978a2bda38442a1b553be59234ee2be7" style="width: 437.368px; height: 438.897px; left: 229.649px; top: -9.4485px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="572" data-natural-height="574" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1483823/images/7988711/Capture7.JPG"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-b00d94" data-block-id="d0578f43c94ee04423ef9eacb394ee15" style="width: 806.4px; height: 203.278px; left: 60.8355px; top: 458.361px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img data-natural-width="841" data-natural-height="212" style="" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1483823/images/7988714/Capture8.JPG"></div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-08c0f7" data-block-id="f6fadf28c13ec115046e91328416e305" style="width: 123.158px; height: 64.2105px; left: 487.192px; top: 328.333px;"><div class="sl-block-content" data-shape-type="symbol-thin-arrow-left" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="2.0002505779266357 4.000251770019531 27.999752044677734 23.999500274658203"><g class="shape-element" fill="#000000" data-viewbox="2.0002505779266357 4.000251770019531 27.999752044677734 23.999500274658203"><path d="M12.586 4.586l-10 10c-0.781 0.781-0.781 2.047 0 2.828l10 10c0.781 0.781 2.047 0.781 2.828 0s0.781-2.047 0-2.828l-6.586-6.586h19.172c1.105 0 2-0.895 2-2s-0.895-2-2-2h-19.172l6.586-6.586c0.39-0.391 0.586-0.902 0.586-1.414s-0.195-1.024-0.586-1.414c-0.781-0.781-2.047-0.781-2.828 0z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-384cac" data-block-id="b819b402960b6c432c2fe2718125eb44" style="width: 114.561px; height: 66.6667px; left: 140.701px; top: 85.7893px;"><div class="sl-block-content" data-shape-type="symbol-thin-arrow-right" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="1.9999980926513672 4.00024938583374 27.999752044677734 23.999500274658203"><g class="shape-element" fill="#000000" data-viewbox="1.9999980926513672 4.00024938583374 27.999752044677734 23.999500274658203"><path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path></g></svg></div></div></section><section data-id="bd1c0db6f18b671019e8e27571657a5d"><div class="sl-block" data-block-type="text" style="width: 806px; left: 86px; top: 21.5px; height: auto;" data-block-id="ed2f18aece545814b5b93b625cf1b78b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1>Improvements</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d5c20d" data-block-id="6af1c9d5316f6a0731394f0b8d446561" style="height: auto; width: 898.421px; left: 21.3684px; top: 126.307px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(0, 0, 0);">
+<p style="text-align:left"><span style="font-size:0.7em"><span style="color:rgb(29, 28, 29); text-align:left">I really should have spent less time on the web-scraping process and more time on the data analysis. Perhaps if I had been able to use regex instead of CSS Selector?</span></span></p>
+
+<p style="text-align:left"><span style="font-size:0.7em"><span style="color:rgb(29, 28, 29); text-align:left">I would have loved looking more into the data, to understand which of boys or girls clothes are discounted the most, which categories of clothes are on sale and if there is a rationale behind the sale figures.</span></span></p>
+
+<p style="text-align:left"><span style="font-size:0.7em"><span style="color:rgb(29, 28, 29); text-align:left">Had I had more time I could also have used mySQL for sophisticated queries.</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4ec0b3" data-block-id="77d8553d23ff4ae828433c46f6e13e04" style="width: 599.194px; height: 255.857px; left: 160px; top: 410.149px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img style="left: 0px; top: -44px; width: 599px; height: 360px;" data-natural-width="1000" data-natural-height="600" data-crop-x="0" data-crop-y="0.12357" data-crop-width="1" data-crop-height="0.71167" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1483630/images/7935448/Change_leading_to_improvement.jpg"></div></div></section><section data-id="de5d66ddfeb66fe17ec329cb05de5af9"><div class="sl-block" data-block-type="text" style="width: 658px; left: 151px; top: 45px; height: auto;" data-block-id="417fcd2f1f46474e0a42c78c6e7e2077"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h3><span style="color:rgb(29, 28, 29)">If I were to start from scratch...</span></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 837px; left: 20.8947px; top: 133px; height: auto;" data-block-id="976e2c12a72c2ab4867bc750a7e0c509"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 12; text-align: left;">
+<p style="text-align:center">I would chose another website, easier to scrape under limited time conditions!</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 384.821px; height: 303.03px; left: 255.179px; top: 305.789px; min-width: 1px; min-height: 1px;" data-block-id="ae220666275c17064a1beef9a13d7a1d"><div class="sl-block-style" style="z-index: 11; transform: rotate(0deg);"><div class="sl-block-content" style="z-index: 11;"><img data-natural-width="780" data-natural-height="380" data-crop-x="0.170169" data-crop-y="0" data-crop-width="0.618674" data-crop-height="1" style="left: -106px; top: 0px; width: 622px; height: 303px;" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1483630/images/7935576/start-journey.jpg"></div></div></div></section><section data-id="d312b5d4625ab904f42a81287d4941b4"><div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 189px; height: auto;" data-block-id="7dca24804ac2fd7fb37e6bdd8b8be545"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Also available</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 807px; left: 80px; top: 263px; height: auto;" data-block-id="2598bac0b555ec5e86df1482352a39d4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>a Jupyter notebook: pajama_project.ipynb</li>
+	<li>a csv.file of the database: <span style="color:rgb(17, 17, 17); text-align:left">pajama_project.csv</span>
+</li>
+</ul>
+</div></div></section></section>
+				</div>
+				<div class="dimmer"></div>
+			</div>
+		</div>
+
+		
+		
+<script>
+	var SLConfig = {"current_user":{"id":1483823,"username":"moncomptegoogle","name":"moncompte Google","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a-/AOh14Ggwh4Ebiec-ttkbNet0JGiJt-uR8RH81BwYPL2XP-k=s96-c","account_type":"default","team_id":null,"settings":{"id":6759874,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":null,"speaker_theme":null,"phone_number":null,"phone_country_code":null,"media_sources":null,"export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null,"auto_animate_tutorial_completed":null},"email":"heleneh2805@gmail.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":null,"storage_used":1041461,"storage_limit":262144000,"image_upload_limit":10485760,"video_upload_limit":104857600},"deck":{"id":1985933,"slug":"casino-wheel-63e606","title":"Week 3 -  Web-scraping project","description":"Hélène","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2020-11-29T22:07:11.229Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/9555b72844421cecfb2391e6c34b7f38/thumb.jpg?1606686860","view_count":1,"user":{"id":1483823,"username":"moncomptegoogle","name":"moncompte Google","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a-/AOh14Ggwh4Ebiec-ttkbNet0JGiJt-uR8RH81BwYPL2XP-k=s96-c","account_type":"default","team_id":null,"settings":{"id":6759874,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"sand-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":13,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":null,"data_updated_at":1606687892461,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"notes":{}},"user":{"id":1483823,"username":"moncomptegoogle","name":"moncompte Google","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a-/AOh14Ggwh4Ebiec-ttkbNet0JGiJt-uR8RH81BwYPL2XP-k=s96-c","account_type":"default","team_id":null,"settings":{"id":6759874,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
+</script>
+		<script src="//assets.slid.es/assets/application-d30ec8a89b06ea4c819f32b8d787c25e26eb6ef7c5747f06e1f1ce3a2ec26501.js" defer="defer"></script>
+		<script src="//assets.slid.es/assets/socket.io-281b07f35b3367f9273afcc164829c9429ca3b48f43695ab5d439641b7de18a4.js" defer="defer"></script>
+		<script src="//assets.slid.es/assets/deck-4800db274d9da6e32e8a5d9260ddd66a13dce0bbec2de9a14b8d2b26116af9dc.js" defer="defer"></script>
+		
+
+	</body>
+</html>
